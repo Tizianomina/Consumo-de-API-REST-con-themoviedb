@@ -21,11 +21,11 @@ const cargarPeliculas = async () => {
       `https://api.themoviedb.org/3/movie/popular?api_key=e9042e5e29d7e9f52a46a6defc067d82&lenguage=es-ARG&page=${pagina}`
     );
 
-    console.log(respuesta);
+    /* console.log(respuesta); */
 
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
-      console.log(datos)
+      /* console.log(datos) */
       let peliculas = ``;
 
       datos.results.forEach((pelicula) => {
